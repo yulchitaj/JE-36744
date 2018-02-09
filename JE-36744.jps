@@ -1,0 +1,23 @@
+{
+  "version": "0.99",
+  "type": "update",
+  "name": "JE-36744 [CS] - empty placeholder values are not replaced",
+  
+  "onInstall": {
+    "check": {
+      "empty": "",
+      "false": false,
+      "null": null
+    }
+  },
+  
+  "actions": {
+    "check": {
+      "log": [
+        "empty - ${this.empty}",
+        "false - ${this.false}",
+        "null - ${this.null}"
+      ]
+    }
+  }
+}
